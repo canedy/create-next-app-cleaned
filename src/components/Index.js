@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Colors, Devices } from "./Theme";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import Link from "next/link";
+import Button from "./styled/Button";
 
 const IndexEl = styled.article`
   height: 100vh;
@@ -64,37 +65,14 @@ export default function Index() {
   return (
     <IndexEl>
       <Head>
-        <title>Create Next App - TasmeTime</title>
+        <title>Crypto.com NFT Marketplace</title>
         <meta
           name="description"
           content="Cleaned create-next-app including styled-components and configured theme"
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <section>
-        <HeroTitle>DON'T WASTE TIME!</HeroTitle>
-        <HeroText>
-          Go ahead and build what's in your mind, everything is set 😉
-        </HeroText>
-        <BtnContainer>
-          <Link href="https://m-azad.ir" passHref>
-            <Site target="_blank" rel="author">
-              <BsGlobe />
-              Website
-            </Site>
-          </Link>
-
-          <Link
-            href="https://github.com/TasmeTime/create-next-app-cleaned"
-            passHref
-          >
-            <Github target="_blank" rel="external">
-              <BsGithub />
-              Fork on Github!
-            </Github>
-          </Link>
-        </BtnContainer>
-      </section>
+      <Button>Test BTN</Button>
     </IndexEl>
   );
 }
